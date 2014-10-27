@@ -11,6 +11,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+
+
 public class CoolWeatherDB {
 public static final String DB_NAME="cool_weather";
 public static final int VERSION=1;
