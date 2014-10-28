@@ -1,6 +1,7 @@
 package activity;
 
 
+import service.AutoUpdateService;
 import util.HttpCallbackListener;
 import util.HttpUtil;
 import util.Utility;
@@ -144,6 +145,8 @@ publishText.setText("今天"+prefs.getString("publish_time", "")+"发布");
 currentDateText.setText(prefs.getString("current_date", ""));
 weatherInfoLayout.setVisibility(View.VISIBLE);
 cityNameText.setVisibility(View.VISIBLE);
+Intent intent=new Intent(this,AutoUpdateService.class);
+startService(intent);
 	}
 
 }
